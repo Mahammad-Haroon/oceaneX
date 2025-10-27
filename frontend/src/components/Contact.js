@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaUser, FaEnvelope, FaPhone, FaBookOpen, FaCommentDots, FaPaperPlane } from "react-icons/fa";
@@ -20,7 +19,8 @@ const Contact = () => {
     setLoading(true);
     setStatus("");
     try {
-  const res = await axios.post("http://localhost:5000/api/contact", form);
+      const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
+      const res = await axios.post(`${API_URL}/api/contact`, form);
       if (res.status === 200) {
         setStatus("success");
         setForm(initialState);
