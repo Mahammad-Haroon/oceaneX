@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaLaptopCode, FaRobot, FaChartBar, FaShieldAlt } from "react-icons/fa";
+import { FaLaptopCode, FaRobot, FaChartBar } from "react-icons/fa";
 
 const programs = [
   {
