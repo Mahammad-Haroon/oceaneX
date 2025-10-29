@@ -55,8 +55,8 @@ const Contact = () => {
         </motion.div>
         {/* Contact Form (right) */}
         <motion.form
-          onSubmit={handleSubmit}
-          className="flex-1 bg-white/80 backdrop-blur-lg rounded-3xl shadow-2xl p-8 md:p-12 flex flex-col gap-6 border-2 border-blue-100"
+      onSubmit={handleSubmit}
+            className="contact-form" style={{maxWidth: '500px', width: '100%', margin: '2rem auto', padding: '1.5rem', boxShadow: '0 4px 16px rgba(0,0,0,0.10)', borderRadius: '12px', background: '#fff', display: 'flex', flexDirection: 'column', gap: '1rem'}}
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
@@ -125,7 +125,7 @@ const Contact = () => {
           </div>
           <motion.button
             type="submit"
-            className="bg-gradient-to-r from-blue-600 via-blue-500 to-purple-500 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:from-blue-700 hover:to-purple-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 transition text-lg flex items-center justify-center gap-2"
+         className="bg-gradient-to-r from-blue-600 via-blue-500 to-purple-500 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:from-blue-700 hover:to-purple-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 transition text-lg flex items-center justify-center gap-2"
             whileHover={{ scale: 1.06 }}
             whileTap={{ scale: 0.97 }}
             disabled={loading}
