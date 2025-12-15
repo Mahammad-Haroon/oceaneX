@@ -50,7 +50,9 @@ const Hero = () => {
         </p>
         <div className="flex gap-4">
           <a
-            href="#contact"
+            href="https://www.linkedin.com/company/oceanex14"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-7 py-3 rounded-full bg-blue-700 text-white font-semibold text-lg shadow-lg hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 transition"
           >
             Apply Now

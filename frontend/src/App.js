@@ -10,7 +10,6 @@ import Services from './components/Services';
 import Programs from './components/Programs';
 import HowItWorks from './components/HowItWorks';
 import Testimonials from './components/Testimonials';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 
@@ -31,7 +30,6 @@ function App() {
                 <Programs />
                 <HowItWorks />
                 <Testimonials />
-                <Contact />
                 <Footer />
               </>
             }
